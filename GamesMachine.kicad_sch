@@ -6,8 +6,8 @@
 	(paper "A2")
 	(title_block
 		(title "Random Numbers Game Machine")
-		(date "2026-07-09")
-		(rev "1.0")
+		(date "2026-08-17")
+		(rev "2.0")
 		(company "Sideburn Studios")
 	)
 	(lib_symbols
