@@ -60,13 +60,16 @@ crossed leads. TR4 (2N2646, TO-18) deliberately left alone — it is correct as 
 **Still to do in Pcbnew:** Update PCB from Schematic, then re-route TR1-TR3 (pads 2 and 3
 swap nets).
 
-## 5. Fix TR4 (2N2646 UJT) footprint pin mapping
-Same class of problem: the TO-18 footprint pad order vs. the real 2N2646 pinout required
-working out orientation by measurement ("sharpie method") rather than trusting the silkscreen
-notch. Rev 1.0 install ended up straight-in after much confusion, but the symbol/footprint
-mapping was never trustworthy.
-**Fix: verify the 2N2646 symbol pin numbers against the TO-18 footprint pads (E/B1/B2 vs pads
-1/2/3 and the tab position) and correct so the notch/tab on silkscreen matches the real part.**
+## 5. TR4 (2N2646 UJT) footprint — NO CHANGE NEEDED
+Checked against the 3D view on 2026-08-17: the pin mapping is correct as drawn and TR4 drops
+in fine. The part just needs rotating roughly 10° clockwise from the silkscreen tab mark when
+fitting, because the TO-18 leads sit on a circle and don't line up dead-on with the pad angles.
+That is a fitting nuance, not a defect — deliberately left alone.
+
+Worth remembering that identifying a UJT's leads should always be done by measurement (the
+"sharpie method": ohms-mode bar pair = the two bases, leftover lead = emitter, then the
+can-to-lead short splits B1 from B2) rather than by trusting any pinout diagram — two of the
+three 2N2646s obtained during rev 1.0 bring-up were either counterfeit or dead.
 
 ## Lower priority / consider for rev 2
 - ~~No decoupling capacitors anywhere on the digital section~~ — **decided against adding
