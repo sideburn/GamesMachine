@@ -1,6 +1,6 @@
 # Games Machine — Board Bring-Up & Sectional Test Plan
 
-Random Numbers Game Machine, Sideburn Studios rev 1.0
+Random Numbers Game Machine, Sideburn Studios
 Source design: "Games Machine — a programmed random number generator", D. Burn,
 *Practical Electronics*, December 1976, pp. 969–975.
 
@@ -8,9 +8,24 @@ Published reference copy: https://claude.ai/code/artifact/c53d6dda-828d-4b43-869
 
 ---
 
-## Before you assemble — three findings
+> ## ⚠ Check your board revision first
+>
+> This plan was written against **rev 1.0**. The two workarounds under "Before you assemble"
+> apply **only to rev 1.0** — both defects are fixed in the rev 2.0 design.
+>
+> **On a rev 2.0 board, skip findings 1 and 2 entirely:**
+> - Do **not** fit the `LOGIC_0` → ground bodge wire. That net is part of `GND` now.
+> - Do **not** fit the diodes opposite the silkscreen. The band marks the **cathode** correctly
+>   on rev 2.0, so "backwards to the print" would put all 17 diodes in the wrong way round.
+>
+> Everything from "Staged bring-up" onward applies to both revisions — the circuit itself is
+> unchanged. The schematic title block gives the revision.
 
-### 1. CRITICAL — `LOGIC_0` is never connected to ground
+---
+
+## Before you assemble — three findings *(rev 1.0 only — see warning above)*
+
+### 1. CRITICAL — `LOGIC_0` is never connected to ground *(rev 1.0 only)*
 
 `GND` and `LOGIC_0` are two separate nets on this board. In the 1976 schematic the "0" symbol
 simply *is* 0 V, but here `LOGIC_0` was drawn as its own label and never tied down. It has
