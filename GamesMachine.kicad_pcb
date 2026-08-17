@@ -4845,7 +4845,7 @@
 	(footprint "Package_DIP:DIP-14_W7.62mm"
 		(layer "F.Cu")
 		(uuid "20edc24b-ffba-41a3-a846-006c323cebf0")
-		(at 164 63.84)
+		(at 149 63.84)
 		(descr "14-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils)")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil")
 		(property "Reference" "TENS1"
@@ -10514,7 +10514,7 @@
 	(footprint "Package_DIP:DIP-14_W7.62mm"
 		(layer "F.Cu")
 		(uuid "5e00d00b-5c2b-4b5c-977f-0a7f59191070")
-		(at 149 63.84)
+		(at 164 63.84)
 		(descr "14-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils)")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil")
 		(property "Reference" "UNITS1"

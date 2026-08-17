@@ -31,12 +31,22 @@ violations, same category breakdown.
 **Still to do in Pcbnew:** Update PCB from Schematic, confirm the diode pads swapped as
 expected, re-route if needed, and check a silkscreen plot shows band = cathode before ordering.
 
-## 3. Swap UNITS and TENS display positions
+## 3. Swap UNITS and TENS display positions — DONE, display area needs re-route
 UNITS display sits on the left (x=149), TENS on the right (x=164) — reverse of reading order.
 Wiring and silkscreen labels are internally consistent; the number just reads transposed
 (board shows "41" for the value 14). This masqueraded as a Roulette range failure during
 bring-up.
-**Fix: swap the two display footprint placements so TENS is on the left, UNITS on the right.**
+**Done:** exchanged the two footprint placements — TENS1 now sits at x=149 (left), UNITS1 at
+x=164 (right). Both are identical DIP-14 footprints at the same Y with no rotation, so this was
+a straight swap of their `(at ...)` positions; each display keeps its own segment nets. The
+number now reads in natural order.
+
+The segment resistor banks were deliberately left alone: R11–R17 (tens) and R18–R24 (units) are
+horizontal rows that already span the full width above both displays, so they don't need to move
+— only the routing between them changes.
+
+**Still to do in Pcbnew:** re-route the display area. Immediately after the swap DRC shows 14
+shorts and 14 unconnected, because the old copper stayed put while the footprints traded places.
 
 ## 4. Fix transistor footprint pin order — TR1, TR2, TR3 (2N2926) — DONE in schematic, PCB pending
 The schematic/footprint assumed E-B-C lead order, but the real 2N2926 is **E-C-B** (per
