@@ -860,7 +860,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -878,7 +878,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -10516,7 +10516,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "17bcea7d-0bab-492b-844f-55d97e78b826")
-		(property "Reference" "S6b"
+		(property "Reference" "S6b1"
 			(at 513.79 196.31 0)
 			(effects
 				(font
@@ -10571,7 +10571,7 @@
 		(instances
 			(project "GamesMachine"
 				(path "/8b2932eb-08c7-412c-8772-7207c8d67aa1"
-					(reference "S6b")
+					(reference "S6b1")
 					(unit 1)
 				)
 			)
@@ -10750,7 +10750,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "25ba37f8-3ad2-4378-9c1f-1e64683a319a")
-		(property "Reference" "S5c"
+		(property "Reference" "S5c1"
 			(at 187.49 365.61 0)
 			(effects
 				(font
@@ -10805,7 +10805,7 @@
 		(instances
 			(project "GamesMachine"
 				(path "/8b2932eb-08c7-412c-8772-7207c8d67aa1"
-					(reference "S5c")
+					(reference "S5c1")
 					(unit 1)
 				)
 			)
@@ -11355,7 +11355,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3b748497-2b7f-482a-b914-34fcd3a57bf1")
-		(property "Reference" "S6c"
+		(property "Reference" "S6c1"
 			(at 187.49 335.61 0)
 			(effects
 				(font
@@ -11410,7 +11410,7 @@
 		(instances
 			(project "GamesMachine"
 				(path "/8b2932eb-08c7-412c-8772-7207c8d67aa1"
-					(reference "S6c")
+					(reference "S6c1")
 					(unit 1)
 				)
 			)
@@ -11626,7 +11626,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "520d0c5b-ad9b-45c0-9e03-98e9df860b87")
-		(property "Reference" "S3a"
+		(property "Reference" "S3a1"
 			(at 126.72 317.37 0)
 			(effects
 				(font
@@ -11681,7 +11681,7 @@
 		(instances
 			(project "GamesMachine"
 				(path "/8b2932eb-08c7-412c-8772-7207c8d67aa1"
-					(reference "S3a")
+					(reference "S3a1")
 					(unit 1)
 				)
 			)
@@ -11964,7 +11964,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "645b5cab-66c9-40ac-99c5-80bfe0802351")
-		(property "Reference" "S4b"
+		(property "Reference" "S4b1"
 			(at 513.79 156.31 0)
 			(effects
 				(font
@@ -12019,7 +12019,7 @@
 		(instances
 			(project "GamesMachine"
 				(path "/8b2932eb-08c7-412c-8772-7207c8d67aa1"
-					(reference "S4b")
+					(reference "S4b1")
 					(unit 1)
 				)
 			)
@@ -12469,7 +12469,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7ff69586-4c84-42a8-8645-6930771c52aa")
-		(property "Reference" "UNITS"
+		(property "Reference" "UNITS1"
 			(at 297.18 339.598 0)
 			(effects
 				(font
@@ -12555,7 +12555,7 @@
 		(instances
 			(project "GamesMachine"
 				(path "/8b2932eb-08c7-412c-8772-7207c8d67aa1"
-					(reference "UNITS")
+					(reference "UNITS1")
 					(unit 1)
 				)
 			)
@@ -12838,7 +12838,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "920838ee-d6a7-4282-8efc-ba393766ca7a")
-		(property "Reference" "S4a"
+		(property "Reference" "S4a1"
 			(at 126.72 337.37 0)
 			(effects
 				(font
@@ -12893,7 +12893,7 @@
 		(instances
 			(project "GamesMachine"
 				(path "/8b2932eb-08c7-412c-8772-7207c8d67aa1"
-					(reference "S4a")
+					(reference "S4a1")
 					(unit 1)
 				)
 			)
@@ -13114,7 +13114,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "99c34530-3ba9-47b9-b342-d037f67e8265")
-		(property "Reference" "S5a"
+		(property "Reference" "S5a1"
 			(at 126.72 357.37 0)
 			(effects
 				(font
@@ -13169,7 +13169,7 @@
 		(instances
 			(project "GamesMachine"
 				(path "/8b2932eb-08c7-412c-8772-7207c8d67aa1"
-					(reference "S5a")
+					(reference "S5a1")
 					(unit 1)
 				)
 			)
@@ -13993,7 +13993,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b5c700da-aa7c-4b08-9c9c-0f7de0cf6683")
-		(property "Reference" "PWR"
+		(property "Reference" "PWR1"
 			(at 371 277.75 0)
 			(effects
 				(font
@@ -14048,7 +14048,7 @@
 		(instances
 			(project "GamesMachine"
 				(path "/8b2932eb-08c7-412c-8772-7207c8d67aa1"
-					(reference "PWR")
+					(reference "PWR1")
 					(unit 1)
 				)
 			)
@@ -14197,7 +14197,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bc1fd8ae-578c-4d3f-b204-6bc200615498")
-		(property "Reference" "S6d"
+		(property "Reference" "S6d1"
 			(at 237.49 365.61 0)
 			(effects
 				(font
@@ -14252,7 +14252,7 @@
 		(instances
 			(project "GamesMachine"
 				(path "/8b2932eb-08c7-412c-8772-7207c8d67aa1"
-					(reference "S6d")
+					(reference "S6d1")
 					(unit 1)
 				)
 			)
@@ -14853,7 +14853,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cacee8e0-4989-4a1c-826c-8809b821383a")
-		(property "Reference" "TENS"
+		(property "Reference" "TENS1"
 			(at 367.03 339.042 0)
 			(effects
 				(font
@@ -14939,7 +14939,7 @@
 		(instances
 			(project "GamesMachine"
 				(path "/8b2932eb-08c7-412c-8772-7207c8d67aa1"
-					(reference "TENS")
+					(reference "TENS1")
 					(unit 1)
 				)
 			)
@@ -15529,7 +15529,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e8b265a3-2ad9-4c2e-bc0b-86df9608411a")
-		(property "Reference" "S5b"
+		(property "Reference" "S5b1"
 			(at 513.79 176.31 0)
 			(effects
 				(font
@@ -15584,7 +15584,7 @@
 		(instances
 			(project "GamesMachine"
 				(path "/8b2932eb-08c7-412c-8772-7207c8d67aa1"
-					(reference "S5b")
+					(reference "S5b1")
 					(unit 1)
 				)
 			)
@@ -15733,7 +15733,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "efb40bfc-3391-4028-8c8e-3f26e04dc239")
-		(property "Reference" "S6a"
+		(property "Reference" "S6a1"
 			(at 126.72 377.37 0)
 			(effects
 				(font
@@ -15788,7 +15788,7 @@
 		(instances
 			(project "GamesMachine"
 				(path "/8b2932eb-08c7-412c-8772-7207c8d67aa1"
-					(reference "S6a")
+					(reference "S6a1")
 					(unit 1)
 				)
 			)
@@ -15940,7 +15940,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f5b35771-0e6c-4cb1-b1ff-69702cd446df")
-		(property "Reference" "S3b"
+		(property "Reference" "S3b1"
 			(at 513.79 136.31 0)
 			(effects
 				(font
@@ -15995,7 +15995,7 @@
 		(instances
 			(project "GamesMachine"
 				(path "/8b2932eb-08c7-412c-8772-7207c8d67aa1"
-					(reference "S3b")
+					(reference "S3b1")
 					(unit 1)
 				)
 			)

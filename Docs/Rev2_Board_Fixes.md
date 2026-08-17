@@ -38,11 +38,17 @@ Wiring and silkscreen labels are internally consistent; the number just reads tr
 bring-up.
 **Fix: swap the two display footprint placements so TENS is on the left, UNITS on the right.**
 
-## 4. Fix transistor footprint pin order — TR1, TR2, TR3 (2N2926)
+## 4. Fix transistor footprint pin order — TR1, TR2, TR3 (2N2926) — DONE in schematic, PCB pending
 The schematic/footprint assumed E-B-C lead order, but the real 2N2926 is **E-C-B** (per
 Central Semiconductor datasheet). On rev 1.0 all three had to be installed with leads 2 and 3
 crossed.
-**Fix: correct the symbol/footprint pin mapping so the part drops in straight.**
+**Done:** swapped the B and C pin numbers on the project-local `2N2926` symbol, in both
+`GamesMachine.kicad_sym` and the schematic's cached copy. Pin functions and graphics are
+unchanged; only the pad each one maps to moved. Netlist now reads pad 1 = E, pad 2 = C,
+pad 3 = B for TR1/TR2/TR3, matching the real device, so the part drops straight in with no
+crossed leads. TR4 (2N2646, TO-18) deliberately left alone — it is correct as built.
+**Still to do in Pcbnew:** Update PCB from Schematic, then re-route TR1-TR3 (pads 2 and 3
+swap nets).
 
 ## 5. Fix TR4 (2N2646 UJT) footprint pin mapping
 Same class of problem: the TO-18 footprint pad order vs. the real 2N2646 pinout required
