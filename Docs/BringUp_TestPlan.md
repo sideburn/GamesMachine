@@ -123,7 +123,7 @@ Fit: TR1–TR3, TR4, R1–R7, C1–C4. Logic sockets still empty.
 Orientation notes:
 - TR1–TR3 = 2N2926, TO-92, pad 1 = E, 2 = B, 3 = C.
 - TR4 = 2N2646 UJT in **TO-18 metal can** (different footprint), pad 1 = E, 2 = B1, 3 = B2.
-- C1, C2, C4 electrolytics are correctly silk-marked (unlike the diodes): **+** is the pad 1 end.
+- C1, C2, C4 are correctly silk-marked (unlike the diodes): **+** is the pad 1 end.
 - **TR1's collector is deliberately unconnected.** The noise comes from its reverse-biased
   base-emitter junction avalanching. Do not "fix" it.
 
