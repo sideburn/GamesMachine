@@ -22,11 +22,11 @@ pushbutton switch bank (S1, S3–S6).
 ## Status
 
 Rev 1.0 board fully bring-up tested and confirmed functional across all four game modes —
-see `Docs/BringUp_TestPlan.md` and `Docs/GameMode_Jumper_Reference.md` in the companion
-client project folder for the full procedure and results.
+see `Docs/BringUp_TestPlan.md` and `Docs/GameMode_Jumper_Reference.md` for the full
+procedure and results.
 
-Known rev 1.0 defects and their fixes are tracked in `Docs/Rev2_Board_Fixes.md` (same
-folder) and are being applied here commit-by-commit ahead of a rev 2.0 board order.
+Known rev 1.0 defects and their fixes are tracked in `Docs/Rev2_Board_Fixes.md` and are
+being applied here commit-by-commit ahead of a rev 2.0 board order.
 
 ## Repository contents
 
