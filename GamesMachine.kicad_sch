@@ -7428,7 +7428,7 @@
 		)
 		(uuid "095984b0-f991-4451-8767-53aaf9a54816")
 	)
-	(label "LOGIC_0"
+	(label "GND"
 		(at 131.8 372.76 0)
 		(effects
 			(font
@@ -8098,7 +8098,7 @@
 		)
 		(uuid "47031d05-0314-40b1-ac38-f5b58a1d14d1")
 	)
-	(label "LOGIC_0"
+	(label "GND"
 		(at 146.05 142.24 180)
 		(effects
 			(font
@@ -8298,7 +8298,7 @@
 		)
 		(uuid "55e6c2a7-33d5-45af-9c40-3182c6dba490")
 	)
-	(label "LOGIC_0"
+	(label "GND"
 		(at 198.92 339.57 0)
 		(effects
 			(font
@@ -8388,7 +8388,7 @@
 		)
 		(uuid "5e0dedac-c346-4d28-9ab7-d5ee9616b47e")
 	)
-	(label "LOGIC_0"
+	(label "GND"
 		(at 248.92 369.57 0)
 		(effects
 			(font
@@ -8418,7 +8418,7 @@
 		)
 		(uuid "6013f46f-82ec-4ee2-9a44-8f2eab952463")
 	)
-	(label "LOGIC_0"
+	(label "GND"
 		(at 154.94 281.94 180)
 		(effects
 			(font
@@ -8688,7 +8688,7 @@
 		)
 		(uuid "79c5630d-2dc6-4c0d-85ab-9624a7211e96")
 	)
-	(label "LOGIC_0"
+	(label "GND"
 		(at 146.05 144.78 180)
 		(effects
 			(font
@@ -8988,7 +8988,7 @@
 		)
 		(uuid "994dd8ee-9643-4da3-a0fd-df6c7e922944")
 	)
-	(label "LOGIC_0"
+	(label "GND"
 		(at 154.94 279.4 180)
 		(effects
 			(font
@@ -9168,7 +9168,7 @@
 		)
 		(uuid "ad60b14b-7887-459e-93e7-5b4450d61031")
 	)
-	(label "LOGIC_0"
+	(label "GND"
 		(at 131.8 332.76 0)
 		(effects
 			(font
@@ -9438,7 +9438,7 @@
 		)
 		(uuid "ce741586-3e76-4f8e-9df4-034e57ed2624")
 	)
-	(label "LOGIC_0"
+	(label "GND"
 		(at 518.87 151.7 0)
 		(effects
 			(font
@@ -9548,7 +9548,7 @@
 		)
 		(uuid "d68cbd2e-b5c3-4172-85d3-f2cf8c3a4cbe")
 	)
-	(label "LOGIC_0"
+	(label "GND"
 		(at 46.99 284.48 180)
 		(effects
 			(font
@@ -9738,7 +9738,7 @@
 		)
 		(uuid "e4fbc6d1-7b8b-444a-916c-b603084f547e")
 	)
-	(label "LOGIC_0"
+	(label "GND"
 		(at 146.05 139.7 180)
 		(effects
 			(font
@@ -9808,7 +9808,7 @@
 		)
 		(uuid "ebf7bc53-b59a-42c1-982a-9d021e5e0b2f")
 	)
-	(label "LOGIC_0"
+	(label "GND"
 		(at 46.99 281.94 180)
 		(effects
 			(font
