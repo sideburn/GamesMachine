@@ -78,7 +78,7 @@ on the 5 V rail with everything populated.
 ## Sourcing notes
 
 Most of the logic is obsolete but still easy to find from surplus dealers. Two parts deserve
-real caution.
+attention.
 
 **2N2646 (TR4)** — this is the part most likely to waste your time. Of three obtained for this
 build, one was a relabelled PNP bipolar (not a UJT at all), one was genuine but so degraded by
@@ -97,11 +97,3 @@ production and can substitute, but need a gate-bias divider added and R6 changed
 
 **2N2926 (TR1–TR3)** — real pinout is **E-C-B**, which trips up a lot of pinout diagrams online.
 Rev 2.0 of this board is drawn for the correct order, so parts drop straight in.
-
-**C1, C2, C4 if you're using old stock** — buying these new, there is nothing to worry about.
-Worth knowing only because this particular build used vintage tantalums supplied with the
-project, and all three had gone leaky with age. C1 is the one that hurts: it sits across TR1's
-emitter bias node, and when leaky it holds that node down around 1.8 V, far below the 6–9 V the
-base-emitter junction needs to avalanche. The noise generator then produces nothing and the
-machine looks completely dead, with no obvious clue as to why. If you have old tantalums in the
-box, fit fresh parts instead — modern electrolytics are fine here.

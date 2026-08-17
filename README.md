@@ -46,11 +46,6 @@ Full detail, including what was deliberately left alone, is in `Docs/Rev2_Board_
   pair = the two bases, the leftover lead = emitter; the can-to-lead short then separates B1
   from B2. Two of the three 2N2646s sourced for this build were counterfeit or dead, and one
   passed a static meter test while being unable to fire under real operating bias.
-- **Don't reuse old tantalums for C1, C2 and C4.** Only relevant if you're working from vintage
-  stock — this build used period tantalums supplied with the project and all three had gone
-  leaky. C1 is the one that hurts: leaky, it holds TR1's emitter down around 1.8 V, far below
-  the ~6–9 V its base-emitter junction needs to avalanche, which silences the noise source and
-  makes the whole machine look dead for no visible reason.
 - TR4 wants rotating roughly 10° clockwise of the silkscreen tab mark when fitting — the TO-18
   leads sit on a circle and don't land dead-on the pad angles.
 
