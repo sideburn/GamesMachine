@@ -25,7 +25,7 @@ Resistors are ¼ W carbon film throughout; the footprints are 10.16 mm pitch axi
 
 | Refs | Value | Qty | Notes |
 |---|---|---|---|
-| C1, C2, C4 | 10 µF | 3 | Article specifies 16 V tantalum; modern electrolytics are fine and more reliable. Polarity: **+ toward the higher-voltage node** |
+| C1, C2, C4 | 10 µF | 3 | Article specifies 16 V tantalum; modern electrolytics work fine. Polarity: **+ toward the higher-voltage node** |
 | C3 | 0.1 µF | 1 | Ceramic disc |
 
 ### Semiconductors
@@ -98,8 +98,10 @@ production and can substitute, but need a gate-bias divider added and R6 changed
 **2N2926 (TR1–TR3)** — real pinout is **E-C-B**, which trips up a lot of pinout diagrams online.
 Rev 2.0 of this board is drawn for the correct order, so parts drop straight in.
 
-**Vintage electrolytics** — if you're building from an old kit, replace C1, C2 and C4 rather
-than trusting them. All three were leaky in this build. C1 is the nastiest: it sits across
-TR1's emitter bias node, and when leaky it holds that node down around 1.8 V, far below the
-6–9 V the base-emitter junction needs to avalanche. The noise generator then produces nothing
-and the machine looks completely dead, with no obvious clue as to why.
+**C1, C2, C4 if you're using old stock** — buying these new, there is nothing to worry about.
+Worth knowing only because this particular build used vintage tantalums supplied with the
+project, and all three had gone leaky with age. C1 is the one that hurts: it sits across TR1's
+emitter bias node, and when leaky it holds that node down around 1.8 V, far below the 6–9 V the
+base-emitter junction needs to avalanche. The noise generator then produces nothing and the
+machine looks completely dead, with no obvious clue as to why. If you have old tantalums in the
+box, fit fresh parts instead — modern electrolytics are fine here.

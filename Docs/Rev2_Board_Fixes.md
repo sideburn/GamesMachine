@@ -88,6 +88,9 @@ passed a static meter test while being unable to fire under real bias.
 
 - **Decoupling capacitors** on the digital section — the board runs fine without them; not worth
   the layout churn.
+- Note on C1/C2/C4: the leaky parts found during bring-up were period tantalums supplied with
+  this particular project, not a general problem with the design. Fresh parts of any suitable
+  type are fine.
 - **F1** (0.5 A PTC) — the paper worst case is around 580 mA, but the built board runs correctly
   on it, so it stays as is.
 - **Z1** (1N4733A, 5.1 V) sits close to its knee on a 5.0 V rail. Measured 4.7–4.8 V in practice
