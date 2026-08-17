@@ -3,20 +3,33 @@
 Running list of board fixes discovered during rev 1.0 bring-up (2026-08-08 → 2026-08-16).
 All are worked around on the rev 1.0 board; all need real fixes in the KiCad source.
 
-## 1. Tie `LOGIC_0` to `GND`
+## 1. Tie `LOGIC_0` to `GND` — DONE in schematic, PCB pending
 `LOGIC_0` is a floating net on rev 1.0 — 38 routed segments, 12 pads (IC2 pins 3/4/5, IC3/IC4
 pins 6/7, S3a/S3b/S5a pin 3, S6c/S6d pin 2), no connection to ground anywhere. Symptom on an
 unfixed board: frozen `99`. Rev 1.0 workaround: bodge wire IC3 pin 7 → IC3 pin 10.
-**Fix: join `LOGIC_0` to `GND` in the schematic (or just relabel the net GND) and reroute.**
 
-## 2. Fix diode symbol/footprint polarity convention
-The project's cached `Device:D` symbol has pin 1 = anode; stock KiCad footprints put the
-silkscreen cathode band at pad 1. Result: the printed band marks the **anode** end for all of
-D5–D20 and Z1, so every diode had to be fitted opposite the silkscreen. Netlist is electrically
-correct — only the silk misleads.
-**Fix: replace the cached symbol with the stock `Device:D` (pin 1 = cathode) and re-check every
-diode's orientation in the schematic, or fix the footprint band. Verify band = cathode on the
-new plot before ordering.**
+**Done (commit d471d4e):** all 12 `LOGIC_0` labels renamed to `GND`, merging the nets. ERC
+shows no new violations.
+**Still to do in Pcbnew:** Tools → Update PCB from Schematic, then route / zone-fill the
+former `LOGIC_0` pads. Not fabrication-ready until that's done and DRC passes.
+
+## 2. Fix diode symbol/footprint polarity convention — DONE in schematic, PCB pending
+The project's cached `Device:D` symbol had pin 1 = anode; the stock footprint
+(`Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal`) correctly puts the silkscreen cathode band at
+pad 1. The footprint was never wrong — only the schematic's *cached copy* of the symbol had
+drifted from the stock library. Result on rev 1.0: printed band marks the **anode** end for
+all of D5–D20 and Z1, so every diode had to be fitted opposite the silkscreen.
+
+**Done:** swapped the pin *numbers* in the cached `Device:D` symbol (pin at the "A" position
+is now 2, pin at the "K" position is now 1), leaving pin names, graphics, and every wire
+untouched. Because KiCad binds wires by coordinate rather than pin number, this fixes all 17
+diodes (D5–D20 + Z1, all of which share this one symbol) in a single edit with no per-instance
+changes. Verified by netlist export: Z1 now reads pin 1 → `/+5V`, pin 2 → `/GND` (was the
+reverse), and D11 pin 1 → `/IC3_QA`, pin 2 → `/S4A_ROULETTE37` (was the reverse) — electrical
+intent unchanged, pin numbering now matches the footprint. ERC unchanged at 348 pre-existing
+violations, same category breakdown.
+**Still to do in Pcbnew:** Update PCB from Schematic, confirm the diode pads swapped as
+expected, re-route if needed, and check a silkscreen plot shows band = cathode before ordering.
 
 ## 3. Swap UNITS and TENS display positions
 UNITS display sits on the left (x=149), TENS on the right (x=164) — reverse of reading order.
