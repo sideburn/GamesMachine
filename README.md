@@ -58,6 +58,8 @@ Full detail, including what was deliberately left alone, is in `Docs/Rev2_Board_
 - `GamesMachine.kicad_sym` — project-local symbol library (custom parts)
 - `GamesMachine.stl` — 3D case/board model
 - `Gerbers/` — fabrication output, regenerated for rev 2.0
+- `Docs/PartsList.md` — full parts list with sourcing notes
+- `Docs/BOM.csv` — machine-readable BOM exported from the schematic
 - `Docs/BringUp_TestPlan.md` — staged bring-up and test procedure
 - `Docs/GameMode_Jumper_Reference.md` — switch/jumper configuration per game mode
 - `Docs/Rev2_Board_Fixes.md` — defect record and how each was resolved
